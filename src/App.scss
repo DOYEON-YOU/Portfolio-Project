@@ -795,6 +795,16 @@
       margin-left: 100px;
     }
   }
+  @media (max-width: 1920px) {
+    font-size: 1.5rem;
+  }
+  @media (min-width: 335px) and (max-width: 757px) {
+    .loadBox {
+      .loadLetter {
+        display: none;
+      }
+    }
+  }
 }
 .notFoundPage {
   background-color: #101010;
@@ -846,6 +856,48 @@
       top: 5px;
       left: 5px;
       box-shadow: none;
+    }
+  }
+  @media (max-width: 1920px) {
+    .errorMessage {
+      .enError {
+        font-size: 5rem;
+      }
+      .koError {
+        font-size: 2.4rem;
+      }
+      .returnPage {
+        margin-top: 70px;
+        width: 330px;
+        height: 70px;
+        font-size: 1.5rem;
+      }
+    }
+  }
+  @media (min-width: 335px) and (max-width: 757px) {
+    .errorMessage {
+      .enError {
+        font-size: 3rem;
+        text-shadow: 3px 3px 0px black, 6px 6px 0px white;
+        -webkit-text-stroke: 1px #ffffff;
+        margin-bottom: 30px;
+      }
+      hr {
+        width: 80vw;
+        margin: 0 auto;
+      }
+      .koErrorWrap {
+        margin-top: 30px;
+      }
+      .koError {
+        font-size: 1.4rem;
+      }
+      .returnPage {
+        font-size: 1rem;
+        width: 200px;
+        height: 50px;
+        margin-top: 50px;
+      }
     }
   }
 }
