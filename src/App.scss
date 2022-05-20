@@ -1,0 +1,566 @@
+@font-face {
+  font-family: 'BlackHanSans';
+  src: url('./fonts/BlackHanSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'LeferiBold';
+  src: url('./fonts/LeferiBaseBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'LeferiRegular';
+  src: url('./fonts/LeferiBaseRegular.ttf') format('truetype');
+}
+
+.App {
+  margin: 0;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  width: 100vw;
+  background-color: #101010;
+
+  .pageSlider-enter {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+
+  .pageSlider-enter-active {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 300ms, transform 300ms;
+  }
+
+  .pageSlider-exit {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .pageSlider-exit-active {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 300ms, transform 300ms;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+// Pages
+
+.page {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  width: 100vw;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.main {
+  color: white;
+  background-color: #101010;
+  height: 100vh;
+
+  // first page welcome letter
+  .welcome {
+    line-height: 260px;
+    transition: all 0.4s;
+    -webkit-text-stroke: 4px #ffffff;
+    font-size: 13rem;
+    text-align: center;
+    color: white;
+    font-family: 'BlackHanSans', sans-serif;
+    text-shadow: 20px 20px 0px #000, 24px 24px 0px rgb(255, 255, 255);
+    font-variation-settings: 'weight' 900;
+    &:hover {
+      font-variation-settings: 'weight' 100;
+      color: transparent;
+      text-shadow: -20px -20px 0px rgb(255, 255, 255),
+        -24px -24px 0px rgb(0, 0, 0);
+      cursor: pointer;
+    }
+  }
+  // first page introduction letter
+  .oneLineIntroduction {
+    font-size: 50px;
+    font-family: 'LeferiBold';
+    transition: all 0.4s;
+    line-height: 60px;
+    text-shadow: 1px 1px 5px white;
+    #myName {
+      -webkit-text-stroke: 1px #ffffff;
+      color: transparent;
+      text-shadow: none;
+    }
+    &:hover {
+      cursor: default;
+    }
+  }
+  .hoverMe {
+    position: absolute;
+    writing-mode: vertical-rl;
+    font-family: 'LeferiBold';
+    font-size: 35px;
+    top: 150px;
+    right: 20px;
+    z-index: 1;
+    -webkit-text-stroke: 1px #ffffff;
+    color: transparent;
+    &:hover {
+      cursor: default;
+    }
+  }
+}
+
+.introduction {
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  background-color: #101010;
+  .sayHello {
+    width: 60vw;
+    font-family: 'LeferiBaseBold';
+    text-align: left;
+    margin: 50px;
+    h1 {
+      margin: 0;
+    }
+    h4 {
+      margin: 0;
+    }
+  }
+  .pBox {
+    display: flex;
+    border: 5px solid rgb(255, 255, 255);
+    box-shadow: 3px 3px 0px rgb(190, 190, 190), 20px 20px 0px rgb(255, 255, 255),
+      23px 23px 0px rgb(0, 0, 0);
+    margin: 20px;
+    height: 400px;
+    border-radius: 10px;
+    color: white;
+    font-family: 'LeferiRegular';
+    align-items: center;
+    font-size: 19px;
+    &:hover {
+      cursor: pointer;
+      background-color: white;
+      color: black;
+      font-weight: bolder;
+    }
+  }
+  img {
+    width: 500px;
+    display: inline-block;
+  }
+}
+
+.stack {
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  background-color: #101010;
+  display: flex;
+  .title {
+    z-index: 3;
+    color: white;
+    font-size: 70px;
+    font-family: 'LeferiBold';
+    margin-bottom: 30px;
+    text-shadow: 7px 7px 0px black;
+  }
+  .stackBox {
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: white;
+    transition: width, background-color 0.4s;
+    overflow: hidden;
+    &:hover {
+      cursor: pointer;
+      background-color: white;
+      svg {
+        width: 180px;
+        transition: all 0.4s;
+      }
+    }
+    svg {
+      width: 140px;
+      transition: all 0.4s;
+    }
+  }
+  .one {
+    border: 7px solid #e34f26;
+  }
+  .two {
+    border: 7px solid #1572b6;
+  }
+  .three {
+    border: 7px solid #f7df1e;
+  }
+  .four {
+    border: 7px solid #3178c6;
+  }
+  .five {
+    border: 7px solid #61dafb;
+  }
+  .six {
+    border: 7px solid #cc6699;
+  }
+  .clickBoxes {
+    font-size: 40px;
+    font-family: 'LeferiBold';
+    color: transparent;
+    -webkit-text-stroke: 1px #ffffff;
+  }
+}
+
+.project {
+  height: 100vh;
+  background-color: #101010;
+}
+
+.info {
+  height: 100vh;
+  background-color: rgb(178, 178, 178);
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  width: 100vw;
+  margin: 0 auto;
+  justify-content: center;
+  background-color: #101010;
+  color: white;
+  width: 100vw;
+  height: 100vh;
+  .title {
+    font-family: 'LeferiBold';
+    font-size: 70px;
+  }
+  hr {
+    width: 50vw;
+    border: 2px solid white;
+    opacity: 1;
+  }
+  h4 {
+    font-family: 'LeferiRegular';
+    margin-bottom: 30px;
+  }
+  .skills {
+    margin-top: 40px;
+    margin-bottom: 0;
+    list-style: none;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    height: 30px;
+    text-align: center;
+    padding: 0;
+    &:before {
+      position: absolute;
+      top: -30px;
+      left: -5px;
+      color: #999;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 15px;
+    }
+    li {
+      width: 7.5%;
+      height: 13px;
+      border: 1px solid white;
+      background: transparent;
+      box-shadow: 0 0 7px 0 fade-out(white, 0.6);
+      display: inline-block;
+      transform: skew(-45deg);
+    }
+    .full {
+      background: white;
+    }
+  }
+}
+.skillList {
+  font-style: italic;
+  color: white;
+  width: 200px;
+  height: 400px;
+  border: 1px solid rgba($color: #ffffff, $alpha: 0.4);
+  position: fixed;
+  top: 500px;
+  right: 100px;
+  hr {
+    margin: 0 auto;
+    position: static;
+    border: 1px solid white;
+    opacity: 0.3;
+    width: 100px;
+  }
+  a {
+    padding: 10px 0px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    line-height: 45px;
+    font-size: 20px;
+    font-family: 'LeferiRegular';
+    transition: all 0.3s;
+    &:hover {
+      background-color: #2c2c2c;
+      color: white;
+      font-family: 'LeferiBold';
+      font-size: 25px;
+    }
+  }
+  .true {
+    font-size: 25px;
+    background-color: white;
+    color: black;
+    font-family: 'LeferiBold';
+    text-decoration: underline;
+    text-underline-position: under;
+  }
+}
+.exitIcon {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  color: black;
+  border-radius: 50px;
+  position: absolute;
+  top: 100px;
+  right: 100px;
+  font-size: 35px;
+  line-height: 35px;
+  opacity: 0.7;
+  transition: all 0.3s;
+  &:hover {
+    color: black;
+    opacity: 1;
+    transition: all 0.3s;
+    box-shadow: 0px 5px 0px gray;
+  }
+  &:active {
+    transform: translateY(5px);
+    box-shadow: none;
+    background-color: rgb(179, 179, 179);
+  }
+}
+
+.arrows {
+  right: 50px;
+  top: 50vh;
+  position: fixed;
+  .arrow {
+    display: inline-block;
+    transition: all 0.2s;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    line-height: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    svg {
+      line-height: 35px;
+      color: black;
+      padding: 7px;
+    }
+    &:hover {
+      background-color: white;
+      transition: all 0.2s;
+      cursor: pointer;
+      box-shadow: 0px 5px 0px rgb(73, 73, 73);
+    }
+    &:active {
+      transform: translateY(10px);
+      background-color: rgb(156, 156, 156);
+      box-shadow: none;
+    }
+  }
+}
+
+.resetWrap {
+  position: absolute;
+  right: 50px;
+  top: 50vh;
+  position: fixed;
+  .reset {
+    display: inline-block;
+    transition: all 0.2s;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+    svg {
+      line-height: 50px;
+      color: black;
+      padding: 10px;
+    }
+    &:hover {
+      background-color: white;
+      transition: all 0.2s;
+      cursor: pointer;
+      box-shadow: 0px 5px 0px rgb(73, 73, 73);
+    }
+    &:active {
+      background-color: rgb(156, 156, 156);
+      width: 49px;
+      height: 49px;
+    }
+  }
+}
+
+.sidebarBox {
+  z-index: 2;
+  background-color: rgba($color: #ffffff, $alpha: 0.5);
+  position: fixed;
+  top: 100px;
+  right: -190px;
+  width: 200px;
+  height: 400px;
+  padding: 10px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  transition: all 0.5s;
+  color: black;
+  font-family: 'LeferiRegular';
+  font-size: 20px;
+  font-weight: bolder;
+  &:hover {
+    transition: all 1s;
+    transform: translateX(-195px);
+    box-shadow: 0px 10px 7px rgb(83, 83, 83);
+    background-color: rgba($color: #ffffff, $alpha: 1);
+  }
+  .menu {
+    font-style: italic;
+    color: black;
+    text-decoration: none;
+    padding: 18px 0px;
+    transition: all 0.5s;
+    font-size: 20px;
+    a {
+      text-decoration: none;
+      color: black;
+      padding: 10px 12px;
+    }
+    &:hover {
+      transition: all 0.5s;
+      font-family: 'LeferiBold';
+      font-size: 20px;
+      cursor: pointer;
+      background-color: #101010;
+      a {
+        color: white;
+      }
+    }
+    &:first-child {
+      margin-top: 20px;
+    }
+  }
+  #true {
+    font-style: italic;
+    text-decoration: underline;
+    text-underline-position: under;
+    font-weight: bolder;
+    transition: all 0.5s;
+    &:hover {
+      transition: all 0.5s;
+      background-color: black;
+    }
+  }
+  hr {
+    margin: 0;
+  }
+}
+
+.loading {
+  background-color: #101010;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  font-family: 'LeferiBold';
+  font-size: 30px;
+  align-items: center;
+  display: flex;
+  .loadBox {
+    margin: 0 auto;
+    .loadLetter {
+      margin-left: 100px;
+    }
+  }
+}
+.notFoundPage {
+  background-color: #101010;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  .errorMessage {
+    margin: 0 auto;
+  }
+  .enError {
+    font-family: 'LeferiBold';
+    color: transparent;
+    -webkit-text-stroke: 3px #ffffff;
+    font-weight: bold;
+    font-size: 150px;
+    text-shadow: 15px 15px 0px black, 17px 17px 0px white;
+    margin-bottom: 50px;
+  }
+  .koErrorWrap {
+    margin-top: 50px;
+  }
+  .koError {
+    font-size: 50px;
+    font-family: 'LeferiRegular';
+    text-shadow: 2px 2px 0px gray;
+  }
+  .returnPage {
+    margin-top: 100px;
+    background: black;
+    color: white;
+    border: 5px solid white;
+    width: 400px;
+    height: 80px;
+    font-family: 'LeferiBold';
+    font-size: 30px;
+    border-radius: 3px;
+    box-shadow: 5px 5px 0px white;
+    transition: all 0.3s;
+    &:hover {
+      background-color: transparent;
+      transition: all 0.3s;
+    }
+    &:active {
+      background-color: black;
+      position: relative;
+      top: 5px;
+      left: 5px;
+      box-shadow: none;
+    }
+  }
+}
+
+@keyframes drift {
+  from {
+    transform: rotate(0deg);
+  }
+  from {
+    transform: rotate(360deg);
+  }
+}
