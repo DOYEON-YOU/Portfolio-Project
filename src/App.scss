@@ -114,6 +114,25 @@
       margin-top: 40px;
     }
   }
+  @media (min-width: 335px) and (max-width: 757px) {
+    .welcome {
+      font-size: 3rem;
+      line-height: 4rem;
+      text-shadow: none;
+      font-family: 'LeferiBold';
+      letter-spacing: 3px;
+      text-shadow: 6px 0px 0px gray;
+      &:hover {
+        text-shadow: none;
+        -webkit-text-stroke: 0.5px #ffffff;
+      }
+    }
+    .oneLineIntroduction {
+      font-size: 1.5rem;
+      line-height: 2rem;
+      margin-top: 20px;
+    }
+  }
 }
 
 .infoWrap {
@@ -173,12 +192,35 @@
         }
       }
       .pBox {
-        width: 300px;
         height: 220px;
         font-size: 1rem;
       }
       img {
         width: 320px;
+      }
+    }
+    @media (min-width: 335px) and (max-width: 757px) {
+      height: 100vh;
+      background-color: #101010;
+      width: 80vw;
+      .sayHello {
+        margin-top: 30px;
+        width: 80vw;
+        h1 {
+          font-size: 1.4rem;
+        }
+        h4 {
+          margin-top: 3px;
+          font-size: 1.1rem;
+        }
+      }
+      .pBox {
+        margin: 5px;
+        height: 200px;
+        border: 1px solid white;
+        box-shadow: none;
+        padding: 5px;
+        font-size: 0.6rem;
       }
     }
   }
@@ -278,15 +320,52 @@
       font-size: 2.5rem;
     }
   }
+  @media (min-width: 335px) and (max-width: 757px) {
+    .title {
+      font-size: 2rem;
+    }
+    .stackBox {
+      margin: 7px;
+      width: 140px;
+      height: 140px;
+      &:hover {
+        svg {
+          width: 100px;
+        }
+      }
+      svg {
+        width: 90px;
+      }
+    }
+    .one {
+      border: 4px solid #e34f26;
+    }
+    .two {
+      border: 4px solid #1572b6;
+    }
+    .three {
+      border: 4px solid #f7df1e;
+    }
+    .four {
+      border: 4px solid #3178c6;
+    }
+    .five {
+      border: 4px solid #61dafb;
+    }
+    .six {
+      border: 4px solid #cc6699;
+    }
+    .clickBoxes {
+      margin-top: 8px;
+      font-size: 1.7rem;
+    }
+  }
 }
 
 .project {
-  height: 500vh;
+  height: 400vh;
   background-color: #101010;
   color: white;
-  .titleBox {
-    height: 100vh;
-  }
   .projects {
     margin: 100px 0px 0px 0px;
   }
@@ -351,10 +430,7 @@
     }
   }
   @media (max-width: 1920px) {
-    height: 500vh;
-    .titleBox {
-      height: 100vh;
-    }
+    height: 420vh;
     .section {
       width: 850px;
       height: 490px;
@@ -373,6 +449,29 @@
         img {
           width: 400px;
           height: 400px;
+        }
+      }
+    }
+  }
+  @media (min-width: 335px) and (max-width: 757px) {
+    width: 100vw;
+    height: 785vh;
+    .section {
+      height: 900px;
+      width: 90vw;
+      padding: 10px;
+      .explainBox {
+        margin: 10px;
+        padding: 10px;
+        .explain {
+          font-size: 1.1rem;
+        }
+      }
+      .img {
+        img {
+          position: relative;
+          margin: 0px;
+          box-shadow: none;
         }
       }
     }
@@ -412,6 +511,14 @@
       border: 1px solid white;
     }
   }
+  @media (min-width: 335px) and (max-width: 757px) {
+    .title {
+      font-size: 2.4rem;
+    }
+    hr {
+      width: 60vw;
+    }
+  }
 }
 .skillList {
   font-style: italic;
@@ -420,6 +527,7 @@
   height: 400px;
   border: 1px solid rgba($color: #ffffff, $alpha: 0.4);
   position: fixed;
+  bottom: 500px;
   top: 500px;
   right: 100px;
   hr {
@@ -468,6 +576,9 @@
       font-size: 1.2rem;
     }
   }
+  @media (min-width: 335px) and (max-width: 757px) {
+    display: none;
+  }
 }
 .exitIcon {
   width: 55px;
@@ -506,6 +617,16 @@
       width: 25px;
     }
   }
+  @media (min-width: 335px) and (max-width: 757px) {
+    width: 30px;
+    height: 30px;
+    top: 30px;
+    right: 30px;
+    .ico {
+      transform: translateY(-2px);
+      width: 20px;
+    }
+  }
 }
 
 .arrows {
@@ -513,7 +634,6 @@
   top: 50vh;
   position: fixed;
   .arrow {
-    display: inline-block;
     transition: all 0.2s;
     width: 50px;
     height: 50px;
@@ -550,10 +670,12 @@
       }
     }
   }
+  @media (min-width: 335px) and (max-width: 757px) {
+    display: none;
+  }
 }
 
 .resetWrap {
-  position: absolute;
   right: 50px;
   top: 50vh;
   position: fixed;
@@ -591,6 +713,9 @@
         transform: translateY(-4px);
       }
     }
+  }
+  @media (min-width: 335px) and (max-width: 757px) {
+    display: none;
   }
 }
 
@@ -640,6 +765,17 @@
   @media (max-width: 1920px) {
     .menu {
       font-size: 15px;
+    }
+  }
+  @media (min-width: 335px) and (max-width: 757px) {
+    background-color: #101010;
+    width: 100vw;
+    height: 50px;
+    top: 0;
+    text-align: center;
+    .menu {
+      margin: 0 auto;
+      display: inline;
     }
   }
 }
