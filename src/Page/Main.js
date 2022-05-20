@@ -48,7 +48,6 @@ const Main = props => {
         </div>
         <Arrow next='intro' />
         <Sidebar main={window.location.pathname === '/' ? 'true' : 'false'}/>
-        <div className='hoverMe' data-aos='zoom-in'>Hover Me!</div>
       </div>
     </motion.div>
   );
