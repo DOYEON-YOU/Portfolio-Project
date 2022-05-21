@@ -37,8 +37,8 @@ const Introduction = props => {
               <hr />
             </Col>
           </Row>
-          <Row>
-            <Col
+          <div className='wrap'>
+            <div
               className='pBox'
               data-aos='flip-left'
               data-aos-duration='3000'>
@@ -46,8 +46,8 @@ const Introduction = props => {
               rerum commodi excepturi, fugit saepe nemo laudantium eaque,
               corporis eveniet fuga minima nesciunt ea? Cum quod quam error non
               nulla voluptatum.
-            </Col>
-            <Col
+            </div>
+            <div
               className='pBox'
               data-aos='flip-left'
               data-aos-delay='300'
@@ -56,10 +56,10 @@ const Introduction = props => {
               rerum commodi excepturi, fugit saepe nemo laudantium eaque,
               corporis eveniet fuga minima nesciunt ea? Cum quod quam error non
               nulla voluptatum.
-            </Col>
-          </Row>
-          <Row>
-            <Col
+            </div>
+          </div>
+          <div className='wrap'>
+            <div
               className='pBox'
               data-aos='flip-left'
               data-aos-delay='600'
@@ -68,8 +68,8 @@ const Introduction = props => {
               rerum commodi excepturi, fugit saepe nemo laudantium eaque,
               corporis eveniet fuga minima nesciunt ea? Cum quod quam error non
               nulla voluptatum.
-            </Col>
-            <Col
+            </div>
+            <div
               className='pBox'
               data-aos='flip-left'
               data-aos-delay='900'
@@ -78,8 +78,8 @@ const Introduction = props => {
               rerum commodi excepturi, fugit saepe nemo laudantium eaque,
               corporis eveniet fuga minima nesciunt ea? Cum quod quam error non
               nulla voluptatum.
-            </Col>
-            <Col
+            </div>
+            <div
               className='pBox'
               data-aos='flip-left'
               data-aos-delay='1200'
@@ -88,10 +88,10 @@ const Introduction = props => {
               rerum commodi excepturi, fugit saepe nemo laudantium eaque,
               corporis eveniet fuga minima nesciunt ea? Cum quod quam error non
               nulla voluptatum.
-            </Col>
-          </Row>
-          <Row>
-            <Col
+            </div>
+          </div>
+          <div className='wrap'>
+            <div
               className='pBox'
               data-aos='flip-left'
               data-aos-delay='1500'
@@ -100,8 +100,8 @@ const Introduction = props => {
               rerum commodi excepturi, fugit saepe nemo laudantium eaque,
               corporis eveniet fuga minima nesciunt ea? Cum quod quam error non
               nulla voluptatum.
-            </Col>
-            <Col
+            </div>
+            <div
               className='pBox'
               data-aos='flip-left'
               data-aos-delay='1800'
@@ -110,8 +110,8 @@ const Introduction = props => {
               rerum commodi excepturi, fugit saepe nemo laudantium eaque,
               corporis eveniet fuga minima nesciunt ea? Cum quod quam error non
               nulla voluptatum.
-            </Col>
-          </Row>
+            </div>
+          </div>
         <Arrow next='stack' />
         <Sidebar introduction={window.location.pathname === '/intro' ? 'true' : 'false'}/>
       </div>
