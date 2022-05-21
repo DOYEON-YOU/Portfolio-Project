@@ -222,20 +222,20 @@
       }
       .pBox {
         margin: 5px;
-        height: 150px;
+        height: 170px;
         border: 1px solid white;
         box-shadow: none;
         padding: 5px;
         display: block;
         flex-direction: column;
-        font-size: 2px;
+        font-size: 1rem;
         overflow: scroll;
       }
     }
     @media (min-height: 844px) {
       .pBox {
         height: 200px;
-        font-size: 0.77rem;
+        font-size: 1rem;
       }
     }
   }
@@ -379,7 +379,7 @@
 }
 
 .project {
-  height: 400vh;
+  height: 390vh;
   background-color: #101010;
   color: white;
   .projects {
@@ -493,7 +493,7 @@
       }
     }
   }
-  @media (min-height: 844px) {
+  @media (min-height: 844px) and (max-height: 926px) {
     height: 680vh;
     .section{
       height: 800px;
@@ -798,8 +798,7 @@
     top: 0;
     text-align: center;
     .menu {
-      font-size: 0.8rem;
-      margin: -3px;
+      font-size: 12px;
       display: inline;
     &:hover {
       transform: translateX(0px);
