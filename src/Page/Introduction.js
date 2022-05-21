@@ -28,15 +28,15 @@ const Introduction = props => {
       }}
       className='infoWrap'>
       <div className='page introduction'>
-          <Row>
-            <Col className='sayHello'>
+          <div className='wrap'>
+            <div className='sayHello'>
               <h1>안녕하세요!</h1>
               <h4>
                 프론트엔드 개발자를 꿈꾸는 권도연입니다.
               </h4>
               <hr />
-            </Col>
-          </Row>
+            </div>
+          </div>
           <div className='wrap'>
             <div
               className='pBox'
