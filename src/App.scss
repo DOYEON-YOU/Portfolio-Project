@@ -133,6 +133,12 @@
       margin-top: 20px;
     }
   }
+  @media (min-height: 844px) {
+    .oneLineIntroduction {
+      font-size: 1.2rem;
+      line-height: 1.7rem;
+    }
+  }
 }
 
 .infoWrap {
@@ -224,6 +230,12 @@
         flex-direction: column;
         font-size: 2px;
         overflow: scroll;
+      }
+    }
+    @media (min-height: 844px) {
+      .pBox {
+        height: 200px;
+        font-size: 0.77rem;
       }
     }
   }
@@ -479,6 +491,12 @@
           box-shadow: none;
         }
       }
+    }
+  }
+  @media (min-height: 844px) {
+    height: 680vh;
+    .section{
+      height: 800px;
     }
   }
 }
