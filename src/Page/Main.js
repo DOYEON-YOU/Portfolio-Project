@@ -56,7 +56,7 @@ const Main = props => {
           data-aos='fade-up'
           data-aos-duration='3000'
           data-aos-delay='1000'>
-          Front-End Junior Developer Portfolio <br />
+          Junior Front-End Developer Portfolio <br />
           <span id='myName'>Kwon Doyeon</span>
         </div>
         <Arrow next='intro' />
