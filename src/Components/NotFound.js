@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Link } from 'react-router-dom';
 
 const NotFound = props => {
   useEffect(() => {
@@ -29,7 +30,7 @@ const NotFound = props => {
               아래의 버튼을 눌러 유효한 페이지로 돌아가세요.
             </div>
           </div>
-          <a href='/'>
+          <Link to='/'>
             <button
               data-aos='fade-up'
               data-aos-delay='1500'
@@ -37,7 +38,7 @@ const NotFound = props => {
               className='returnPage'>
               Return To Portfolio
             </button>
-          </a>
+          </Link>
         </div>
       </div>
     </>
