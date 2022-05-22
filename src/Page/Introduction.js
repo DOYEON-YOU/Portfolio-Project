@@ -26,7 +26,7 @@ const Introduction = props => {
         x: { type: 'spring', stiffness: 300, damping: 30 },
         opacity: { duration: 0.2 },
       }}
-      className='infoWrap'>
+      className='introWrap'>
       <div className='page introduction'>
           <div className='wrap'>
             <div className='sayHello'>
@@ -41,7 +41,7 @@ const Introduction = props => {
             <div
               className='pBox'
               data-aos='flip-left'
-              data-aos-duration='3000'>
+              data-aos-duration='1000'>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta,
               rerum commodi excepturi, fugit saepe nemo laudantium eaque,
               corporis eveniet fuga minima nesciunt ea? Cum quod quam error non
@@ -50,40 +50,7 @@ const Introduction = props => {
             <div
               className='pBox'
               data-aos='flip-left'
-              data-aos-delay='300'
-              data-aos-duration='3000'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta,
-              rerum commodi excepturi, fugit saepe nemo laudantium eaque,
-              corporis eveniet fuga minima nesciunt ea? Cum quod quam error non
-              nulla voluptatum.
-            </div>
-          </div>
-          <div className='wrap'>
-            <div
-              className='pBox'
-              data-aos='flip-left'
-              data-aos-delay='600'
-              data-aos-duration='3000'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta,
-              rerum commodi excepturi, fugit saepe nemo laudantium eaque,
-              corporis eveniet fuga minima nesciunt ea? Cum quod quam error non
-              nulla voluptatum.
-            </div>
-            <div
-              className='pBox'
-              data-aos='flip-left'
-              data-aos-delay='900'
-              data-aos-duration='3000'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta,
-              rerum commodi excepturi, fugit saepe nemo laudantium eaque,
-              corporis eveniet fuga minima nesciunt ea? Cum quod quam error non
-              nulla voluptatum.
-            </div>
-            <div
-              className='pBox'
-              data-aos='flip-left'
-              data-aos-delay='1200'
-              data-aos-duration='3000'>
+              data-aos-duration='1000'>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta,
               rerum commodi excepturi, fugit saepe nemo laudantium eaque,
               corporis eveniet fuga minima nesciunt ea? Cum quod quam error non
@@ -94,8 +61,7 @@ const Introduction = props => {
             <div
               className='pBox'
               data-aos='flip-left'
-              data-aos-delay='1500'
-              data-aos-duration='3000'>
+              data-aos-duration='1000'>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta,
               rerum commodi excepturi, fugit saepe nemo laudantium eaque,
               corporis eveniet fuga minima nesciunt ea? Cum quod quam error non
@@ -104,8 +70,36 @@ const Introduction = props => {
             <div
               className='pBox'
               data-aos='flip-left'
-              data-aos-delay='1800'
-              data-aos-duration='3000'>
+              data-aos-duration='1000'>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta,
+              rerum commodi excepturi, fugit saepe nemo laudantium eaque,
+              corporis eveniet fuga minima nesciunt ea? Cum quod quam error non
+              nulla voluptatum.
+            </div>
+            <div
+              className='pBox'
+              data-aos='flip-left'
+              data-aos-duration='1000'>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta,
+              rerum commodi excepturi, fugit saepe nemo laudantium eaque,
+              corporis eveniet fuga minima nesciunt ea? Cum quod quam error non
+              nulla voluptatum.
+            </div>
+          </div>
+          <div className='wrap'>
+            <div
+              className='pBox'
+              data-aos='flip-left'
+              data-aos-duration='1000'>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta,
+              rerum commodi excepturi, fugit saepe nemo laudantium eaque,
+              corporis eveniet fuga minima nesciunt ea? Cum quod quam error non
+              nulla voluptatum.
+            </div>
+            <div
+              className='pBox'
+              data-aos='flip-left'
+              data-aos-duration='1000'>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta,
               rerum commodi excepturi, fugit saepe nemo laudantium eaque,
               corporis eveniet fuga minima nesciunt ea? Cum quod quam error non
