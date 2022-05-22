@@ -27,7 +27,7 @@ const Info = props => {
             <FiRotateCcw size={50} />
           </motion.div>
         </Link>
-        <Sidebar info={location === '/info' ? true : false} />
+        <Sidebar info={location === '/info'} />
       </div>
     </motion.div>
   );

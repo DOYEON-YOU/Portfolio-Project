@@ -174,7 +174,7 @@ const Project = props => {
           </div>
         </div>
         <Arrow next='info' />
-        <Sidebar project={location === '/project' ? true : false} />
+        <Sidebar project={location === '/project'} />
       </div>
     </motion.div>
   );

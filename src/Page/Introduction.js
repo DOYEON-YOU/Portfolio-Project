@@ -85,7 +85,7 @@ const Introduction = props => {
           </div>
         </div>
         <Arrow next='stack' />
-        <Sidebar introduction={location === '/intro' ? true : false} />
+        <Sidebar introduction={location === '/intro'} />
       </div>
     </motion.div>
   );

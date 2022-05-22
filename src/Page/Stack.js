@@ -123,7 +123,7 @@ const Stack = props => {
         </Row>
         <div className='clickBoxes'>Click On The Boxes! </div>
         <Arrow next='project' />
-        <Sidebar stack={location === '/stack' ? true : false} />
+        <Sidebar stack={location === '/stack'} />
       </div>
     </motion.div>
   );

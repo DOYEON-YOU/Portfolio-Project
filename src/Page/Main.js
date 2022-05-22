@@ -52,7 +52,7 @@ const Main = props => {
           <span id='myName'>Kwon Doyeon</span>
         </div>
         <Arrow next='intro' />
-        <Sidebar main={location === '/' ? true : false} />
+        <Sidebar main={location === '/'} />
       </div>
     </motion.div>
   );
