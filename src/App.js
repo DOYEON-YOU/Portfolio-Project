@@ -3,7 +3,6 @@ import './App.scss';
 import { useEffect, useState } from 'react';
 import { Route, Routes, Link } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
-import MetaTags from './Components/MetaTags';
 import Main from './Page/Main';
 import Introduction from './Page/Introduction';
 import Stack from './Page/Stack';
@@ -43,7 +42,6 @@ function App() {
   return (
     <div className='App'>
       <AnimatePresence>
-        <MetaTags/>
         <Routes>
           <Route path='/' element={<Main />} />
           <Route
