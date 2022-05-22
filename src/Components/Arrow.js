@@ -5,10 +5,10 @@ import { FiArrowRight } from 'react-icons/fi';
 import { motion } from 'framer-motion';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useLayoutEffect } from 'react';
+import { useEffect } from 'react';
 
 const Arrow = props => {
-  useLayoutEffect(() => {
+  useEffect(() => {
     AOS.init();
   });
 

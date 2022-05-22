@@ -1,6 +1,6 @@
 /* eslint-disable */
 import './App.scss';
-import { useLayoutEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Route, Routes, Link } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import Main from './Page/Main';
@@ -38,12 +38,6 @@ function App() {
       };
     },
   };
-
-  const [loading, setLoading] = useState(true);
-
-  useLayoutEffect(() => {
-    setLoading(false);
-  });
 
   return (
     <div className='App'>
@@ -101,11 +95,8 @@ function App() {
             }
           />
           <Route path='/*' element={<NotFound />} />
-          <Route path='/loading' element={<Loading />} />
         </Routes>
       </AnimatePresence>
-
-      {loading ? <Loading /> : ''}
     </div>
   );
 }

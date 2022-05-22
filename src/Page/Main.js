@@ -6,10 +6,10 @@ import Arrow from '../Components/Arrow';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Sidebar from '../Components/Sidebar';
-import { useLayoutEffect } from 'react';
+import { useEffect } from 'react';
 
 const Main = props => {
-  useLayoutEffect(() => {
+  useEffect(() => {
     AOS.init();
   });
 

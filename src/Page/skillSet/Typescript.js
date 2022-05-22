@@ -1,6 +1,6 @@
 /* eslint-disable */
 
-import React, { useLayoutEffect } from 'react';
+import React, { useEffect } from 'react';
 import SkillList from './Components/SkillList';
 import Exit from './Components/Exit';
 import { motion } from 'framer-motion';
@@ -8,7 +8,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const Typescript = () => {
-  useLayoutEffect(() => {
+  useEffect(() => {
     AOS.init();
   });
 
