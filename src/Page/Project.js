@@ -1,6 +1,6 @@
 /* eslint-disable */
 
-import React, { useEffect } from 'react';
+import React, { useLayoutEffect } from 'react';
 import Arrow from '../Components/Arrow';
 import { motion } from 'framer-motion';
 import Sidebar from '../Components/Sidebar';
@@ -9,7 +9,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const Project = props => {
-  useEffect(() => {
+  useLayoutEffect(() => {
     AOS.init();
   });
 

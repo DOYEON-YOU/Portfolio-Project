@@ -1,6 +1,6 @@
 /* eslint-disable */
 
-import React, { useEffect } from 'react';
+import React, { useLayoutEffect } from 'react';
 import Exit from './Components/Exit';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -8,7 +8,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import SkillList from './Components/SkillList';
 
 const HTML = () => {
-  useEffect(() => {
+  useLayoutEffect(() => {
     AOS.init();
   });
 
@@ -26,9 +26,9 @@ const HTML = () => {
         <hr />
       </motion.div>
       <Exit />
-        <SkillList
-          html={window.location.pathname === '/stack/html' ? 'true' : 'false'}
-        />
+      <SkillList
+        html={window.location.pathname === '/stack/html' ? 'true' : 'false'}
+      />
     </>
   );
 };

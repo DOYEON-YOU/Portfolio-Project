@@ -1,6 +1,6 @@
 /* eslint-disable */
 import './App.scss';
-import { useEffect, useState } from 'react';
+import { useLayoutEffect, useState } from 'react';
 import { Route, Routes, Link } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import Main from './Page/Main';
@@ -41,7 +41,7 @@ function App() {
 
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     setLoading(false);
   });
 

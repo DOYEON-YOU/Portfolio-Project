@@ -545,7 +545,7 @@
         width: 70vw;
         margin: 0px;
         .explain {
-          font-size: 1.1rem;
+          font-size: 1rem;
         }
         .demoBtn {
           margin-top: 30px;
@@ -578,8 +578,10 @@
 }
 
 .info {
+  width: 100vw;
   height: 100vh;
-  background-color: rgb(178, 178, 178);
+  overflow: scroll;
+  background-color: #101010;
 }
 
 .skill {

@@ -1,6 +1,6 @@
 /* eslint-disable */
 
-import React, { useEffect } from 'react';
+import React, { useLayoutEffect } from 'react';
 import SkillList from './Components/SkillList';
 import Exit from './Components/Exit';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -8,7 +8,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const SASS = () => {
-  useEffect(() => {
+  useLayoutEffect(() => {
     AOS.init();
   });
 

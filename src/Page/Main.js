@@ -6,10 +6,10 @@ import Arrow from '../Components/Arrow';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Sidebar from '../Components/Sidebar';
-import { useEffect } from 'react';
+import { useLayoutEffect } from 'react';
 
 const Main = props => {
-  useEffect(() => {
+  useLayoutEffect(() => {
     AOS.init();
   });
 
@@ -42,12 +42,13 @@ const Main = props => {
         <div
           className='oneLineIntroduction'
           data-aos='fade-up'
-          data-aos-duration='3000' data-aos-delay='1000'>
+          data-aos-duration='3000'
+          data-aos-delay='1000'>
           Front-End Junior Developer Portfolio <br />
           <span id='myName'>Kwon Doyeon</span>
         </div>
         <Arrow next='intro' />
-        <Sidebar main={window.location.pathname === '/' ? 'true' : 'false'}/>
+        <Sidebar main={window.location.pathname === '/' ? 'true' : 'false'} />
       </div>
     </motion.div>
   );

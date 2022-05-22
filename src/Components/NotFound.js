@@ -1,9 +1,9 @@
-import React, { useEffect } from 'react';
+import React, { useLayoutEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const NotFound = props => {
-  useEffect(() => {
+  useLayoutEffect(() => {
     AOS.init();
   });
 
@@ -30,7 +30,13 @@ const NotFound = props => {
             </div>
           </div>
           <a href='/'>
-            <button data-aos='fade-up' data-aos-delay='1500' data-aos-duration='2000' className='returnPage'>Return To Portfolio</button>
+            <button
+              data-aos='fade-up'
+              data-aos-delay='1500'
+              data-aos-duration='2000'
+              className='returnPage'>
+              Return To Portfolio
+            </button>
           </a>
         </div>
       </div>
