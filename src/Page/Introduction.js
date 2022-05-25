@@ -36,17 +36,6 @@ const Introduction = props => {
             <hr />
           </div>
         </div>
-        <div className='pBox edu' data-aos='zoom-in' data-aos-duration='1000'>
-          <h1>🎓 Education</h1>
-          <br />
-          <div>
-            <a href='http://acornedu.co.kr/unemployed/edu_detail.jsp?seq=140' target='_blank'>
-              [K-Digital Training] 웹 서비스 기반 빅데이터 분석 및 개발자 양성
-              과정
-            </a>
-            <br />- 에이콘 아카데미 강남점 | 2022.03.30 ~ 현재
-          </div>
-        </div>
         <div className='pBox' data-aos='zoom-in' data-aos-duration='1000'>
           <h1>🔎 Motive</h1>
           <br />

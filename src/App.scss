@@ -186,7 +186,7 @@
         10px 10px 0px rgb(255, 255, 255), 15px 15px 0px rgb(0, 0, 0);
       margin: 20px;
       width: 30vw;
-      height: 500px;
+      height: 520px;
       border-radius: 40px;
       color: white;
       font-family: 'LeferiRegular';
@@ -213,8 +213,9 @@
         }
       }
       .pBox {
+        padding: 10px;
         width: 40vw;
-        height: 350px;
+        height: 400px;
         font-size: 0.95rem;
       }
       img {
