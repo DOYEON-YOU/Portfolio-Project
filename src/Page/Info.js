@@ -40,7 +40,7 @@ const Info = props => {
           </a>
           <a href='tel:010-0000-0000'>
             <div className='shortCut'>
-              <IoCall style={{ marginRight: '10px' }} size={40} /> 010-5647-9689
+              <IoCall style={{ marginRight: '10px' }} size={40} /> 010-0000-0000
             </div>
           </a>
           <br />
