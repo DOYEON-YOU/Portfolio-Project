@@ -629,8 +629,18 @@
     hr {
       border: 1px solid white;
     }
+    .skillExplain {
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+    }
   }
   @media (max-width: 767px) {
+    .skillExplain {
+      padding: 10px;
+      margin-top: 10px;
+      font-size: 0.8rem;
+      line-height: 1.1rem;
+    }
     .title {
       font-size: 2rem;
     }
@@ -640,6 +650,10 @@
     }
   }
   @media (min-width:768px) and (max-width: 1024px) {
+    .skillExplain {
+      font-size: 0.9rem;
+      line-height: 1.2rem;
+    }
     .title {
       font-size: 3rem;
     }
