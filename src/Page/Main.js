@@ -10,7 +10,6 @@ import { useLocation } from 'react-router-dom';
 import Loading from '../Components/Loading';
 
 const Main = props => {
-
   const locationObject = useLocation();
   const location = locationObject.pathname;
 
@@ -32,7 +31,7 @@ const Main = props => {
         x: { type: 'spring', stiffness: 300, damping: 30 },
         opacity: { duration: 0.2 },
       }}>
-      {load == true ? <Loading /> : null}
+      {load === true ? <Loading /> : null}
       <div className='page main'>
         <div className='welcome'>
           <div
