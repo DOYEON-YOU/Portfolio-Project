@@ -37,12 +37,14 @@ const Introduction = props => {
           </div>
         </div>
         <div className='pBox' data-aos='zoom-in' data-aos-duration='1000'>
-          <h1>🔎 Motive</h1>
+          <h1>🔎 Motivate</h1>
           <br />
           <div>
             어렸을 때부터 나이 차이가 많이 나는 언니의 모든 작업 과정을 어깨
             너머에서 지켜봐온 결과 디자인 감각이 많이 늘게 되어 웹디자인 외주를
-            여러 차례 진행했었습니다.
+            여러 차례 진행했었습니다. 개인적인 사정으로 인해 고등학교를 자퇴하게
+            되었고, 이후 대학에 가는 것보다 취업 전선에 더 빨리 뛰어드는 게 더
+            매력적으로 보여 대학 진학을 하지 않았습니다.
           </div>
           <br />
           <div>
