@@ -361,19 +361,20 @@
       margin-bottom: 15px;
     }
     .stackBox {
-      width: 230px;
-      height: 230px;
+      width: 200px;
+      height: 200px;
+      margin: 10px;
       &:hover {
         svg {
-          width: 120px;
+          width: 100px;
         }
       }
       svg {
-        width: 100px;
+        width: 80px;
       }
     }
     .clickBoxes {
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
   }
   @media (max-width: 767px) {
