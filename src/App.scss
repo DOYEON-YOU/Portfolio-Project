@@ -361,19 +361,20 @@
       margin-bottom: 15px;
     }
     .stackBox {
-      width: 230px;
-      height: 230px;
+      width: 200px;
+      height: 200px;
+      margin: 10px;
       &:hover {
         svg {
-          width: 120px;
+          width: 100px;
         }
       }
       svg {
-        width: 100px;
+        width: 80px;
       }
     }
     .clickBoxes {
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
   }
   @media (max-width: 767px) {
@@ -641,19 +642,22 @@
       }
     }
   }
-  .firstPage {
-    position: absolute;
-    right: 30px;
-    font-size: 1.6rem;
-    font-family: 'LeferiRegular';
-    line-height: 2.3rem;
-    bottom: 40vh;
-  }
   @media (max-width: 1920px) {
-    .firstPage {
-      font-size: 1.3rem;
-      line-height: 1.8rem;
-      right: 35px;
+    .infoBox {
+      width: 500px;
+      height: 600px;
+      .aboutMe {
+        font-size: 3rem;
+        margin-bottom: 30px;
+      }
+      .shortCut {
+        width: 300px;
+        height: 50px;
+        font-size: 1.3rem;
+        &:hover {
+          font-size: 1.35rem;
+        }
+      }
     }
   }
   @media (max-width: 767px) {
@@ -677,14 +681,8 @@
         }
       }
     }
-    .firstPage {
-      display: none;
-    }
   }
   @media (min-width: 768px) and (max-width: 1024px) {
-    .firstPage {
-      display: none;
-    }
     .infoBox {
       .shortCut {
         font-size: 1.4rem;

@@ -63,11 +63,6 @@ const Info = props => {
               </div>
             </a>
           </div>
-          <div className='firstPage'>
-            처음으로
-            <br />
-            돌아가기
-          </div>
           <Link to='/' className='resetWrap'>
             <motion.div
               className='reset'
